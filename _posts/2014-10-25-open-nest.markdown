@@ -1,0 +1,100 @@
+---
+layout: post
+title:  "OpenNest, a Raspberry Pi Thermostat"
+date:   2014-10-25 23:00:00
+permalink: opennest
+categories: [nest, raspberry pi, python, qt]
+---
+
+At the beginning of this year, I saw [a post from the Spark team](http://blog.spark.io/2014/01/17/open-source-thermostat/) about their open source thermostat made from a Spark Core. I immediately thought, "I can make that with a Raspberry Pi. And it could have at least 80% feature parity to boot!" Well, after 10 months of on and off (mostly off) tinkering, I finally have a functional prototype ready to unleash upon the world.
+
+![Completed Circuit](/assets/proto.jpg)
+
+## Design Goals
+
+When I was deciding what technologies to use, I wanted to leave myself open and not necessarily pick something that I was familiar with. I have always felt that no programming language/framework is right for every job. That said, here are some of the constraints I considered:
+
+- I assume I will develop this entirely myself, and therefore I must use a productive framework/language with good code reuse. Remote control via mobile cannot be an afterthought.
+- Code should run on the Raspberry Pi, but I also should be able to write code without bringing the Pi with me.
+- A touchscreen TFT + software is way easier to get a rich Nest-like UI than hardware.
+
+## Framework and Languages
+
+There are very few options for programming languages that run on desktop, embedded (pi), and mobile. I was however able to find a framework that ran on most of the platforms I cared to support. That framework is Qt. However, I needed a mix of three languages. 
+
+### QML
+
+This is Qt's JavaScript based markup language, for writing user interfaces.
+
+#### Pros
+
+- Very productive and expressive
+- QtCreator is a good UI design tool
+- Fluid layouts easy to achieve, on multiple screen shapes (mobile, pi, desktop)
+- Easily hooks into other languages, for features it doesn't support
+- Low learning curve
+- 80 - 90% of code, very reusable
+
+#### Cons
+
+- Qt4 only (Qt5 was very difficult to get working on the Pi. I gave up after many frustrating hours)
+- Qt4 has a very limited set of out of the box controls
+
+### Python
+
+#### Pros
+
+- The preferred language for the Raspberry Pi
+- Productive, and has great Qt support
+- Can develop on my laptop, no need to carry Pi with me
+
+#### Cons
+
+- Mobile development is a non-starter
+- No debugging support for Mac (I really don't know how I dealt with that)
+
+### C++
+
+#### Pros
+
+- Supported on both Android and iOS (and Mac/Linux/Windows if you want)
+- Qt is written in C++
+
+#### Cons
+
+- Not productive
+- The cross compile toolchain on Mac for Pi is a fool's errand
+
+## The Process
+
+I knew from the start that the most challenging portion for me would be the physical design rather than the software. It's been about 7 years since my last circuit course, and I had to relearn more than I'd care to admit. The Raspberry Pi community does a great job building components for sale and supporting its users, and I can't imagine having to do this project without that.
+
+### Timeline
+
+#### March 2014
+
+I was able to get much of the UI written in short order. Retrieving and displaying Yahoo! weather took some UI tweaking to get something I was comfortable with. The first working prototype of the UI, running on the Pi, with touchscreen:
+
+![First version](/assets/early.jpg)
+
+Notes: The arrows were the bain of my existence at this time. QML 1.0 doesn't support drawing via JavaScript, so Python (and later C++) had to help with this task. Yes, I know I could have made images, but this was more challenging and scaled better for higher resolutions.
+
+#### Summer 2014
+
+At this point I was on sabbatical from work, so I had lots of time to spend tinkering with my Pi circuit. I enlisted help from my friends over at [@Polymathic](https://twitter.com/teampolymathic) who were generous with their time and office space. I got a good chunk of the actual thermostat code done at this time.
+
+#### Oct 2014
+
+After many months untouched, I finally was able to get a real prototype working. The smart Nest-like features can come later, but for now, it has feature parity with a non-programmable thermostat. It also has a little more swagger than something you'd buy at Home Depot.
+
+## Coming Soon
+
+You may be itching to download this thing and get cracking, but give me some time and I will post the rest of the details. I plan to post the following very soon:
+
+- The circuit diagram and parts list
+- A complete how to guide from A to Z
+- My design for a case made out of plastic or maybe wood
+
+## Conclusion
+
+This project has made me realize how difficult development for different platforms truly is. If in the future you ever have to develop an application for mobile and desktop (and possibly pi), I would say Qt is a great framework for it. Yes, you have to use multiple languages, but it is far better than rewriting entire applications multiple times.
