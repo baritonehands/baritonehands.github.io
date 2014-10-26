@@ -6,7 +6,7 @@ permalink: opennest
 categories: [nest, raspberry pi, python, qt]
 ---
 
-At the beginning of this year, I saw [a post from the Spark team](http://blog.spark.io/2014/01/17/open-source-thermostat/) about their open source thermostat made from a Spark Core. I immediately thought, "I can make that with a Raspberry Pi. And it could have at least 80% feature parity to boot!" Well, after 10 months of on and off (mostly off) tinkering, I finally have a functional prototype ready to unleash upon the world.
+At the beginning of this year, I saw [a post from the Spark team](http://blog.spark.io/2014/01/17/open-source-thermostat/) about their open source thermostat made from a Spark Core. I immediately thought, "I can make that with a Raspberry Pi. And it could have at least 80% feature parity to boot!" Well, after 8 months of on and off (mostly off) tinkering, I finally have a functional prototype ready to unleash upon the world.
 
 ![Completed Circuit](/assets/proto.jpg)
 
