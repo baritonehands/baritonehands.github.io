@@ -4,6 +4,8 @@ title: About Me
 permalink: /about/
 ---
 
+![Me](/assets/PumpkinPi.jpg)
+
 Hi, I'm Brian Gregg and I am a software engineer at [GrubHub](https://www.grubhub.com) in Chicago, IL. Before that, I worked at [Morningstar](http://www.morningstar.com) and [Cisco](http://www.cisco.com).
 
 ### Extracurriculars
