@@ -98,3 +98,5 @@ You may be itching to download this thing and get cracking, but give me some tim
 ## Conclusion
 
 This project has made me realize how difficult development for different platforms truly is. If in the future you ever have to develop an application for mobile and desktop (and possibly pi), I would say Qt is a great framework for it. Yes, you have to use multiple languages, but it is far better than rewriting entire applications multiple times.
+
+For about $100 in parts, you too could have an open source thermostat running your home. The Raspberry Pi (and Arduino/Spark DIY circuits) have made that possible.
