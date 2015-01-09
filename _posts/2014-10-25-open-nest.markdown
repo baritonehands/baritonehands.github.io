@@ -39,7 +39,7 @@ This is Qt's JavaScript based markup language for writing user interfaces.
 
 - Qt4 only (Qt5 was very difficult to get working on the Pi. I gave up after many frustrating hours)
 - Qt4 has a very limited set of out of the box controls
-- No debugging support for Mac (I really don't know how I dealt with that)
+- No debugging support with Python for Mac (I really don't know how I dealt with that)
 
 ### Python
 
