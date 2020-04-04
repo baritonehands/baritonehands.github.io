@@ -4,7 +4,7 @@ email: baritonehands@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Software development, board games, rock and roll. 'Nuff said.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://baritonehands.github.io" # the base hostname & protocol for your site
+url: "https://www.baritonehands.com" # the base hostname & protocol for your site
 twitter_username: baritonehands
 github_username:  baritonehands
 
