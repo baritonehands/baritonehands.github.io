@@ -125,5 +125,5 @@ Here are the resulting screenshots:
 If you're a fan of The Resistance: Avalon, please give it a try. I'm always happy
 to frantically refresh the Google Analytics page and see the traffic increase.
 
-* Play: [merlin.life](http://www.merlin.life)
+* Play: [merlin.life](http://www.merlin.life/?utm_source=blog&utm_medium=link&utm_campaign=social_distancing)
 * Source: [github.com/baritonehands/avalon](https://github.com/baritonehands/avalon)
