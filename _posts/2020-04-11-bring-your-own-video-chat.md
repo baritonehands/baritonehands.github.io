@@ -76,7 +76,9 @@ configuration in JSON format it's not always clear what is default/required/impo
 that deployment manager will choke on. The feedback loop was also really slow
 because bringing up and taking down machines takes a few minutes of time. I
 discovered the "preview" mode pretty late in the process which saved me a bunch
-of debugging time.
+of debugging time. Trickiest part was trying to get the container yaml config to
+work as a template, which I couldn't figure out with pure yaml so I had to write
+that in Python.
 
 ### Step 3. ~~Profit~~ Expenses!
 
