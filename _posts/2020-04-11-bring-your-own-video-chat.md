@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Bring Your Own Video Chat"
+title:  "Bring Your Own Video Chat with Jitsi"
 date:   2020-04-11 14:30:00-0500
-permalink: bring-your-own-video-chat
+permalink: bring-your-own-video-chat-jitsi
 categories: [security, jitsi, zoom]
 ---
 
