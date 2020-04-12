@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Social Deduction and Social Distancing"
-date:   2020-04-04 14:00:00
+date:   2020-04-04 14:00:00-0500
 permalink: social-deduction-and-social-distancing
 categories: [board games, clojure]
 ---
