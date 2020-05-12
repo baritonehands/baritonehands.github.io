@@ -3,3 +3,13 @@ img.avalon {
   margin: 10px 0;
   width: 200px;
 }
+
+img.screenshot {
+  margin: 10px 0;
+  width: 360px;
+}
+
+img.screenshot.vertical {
+  width: auto;
+  height: 360px;
+}
